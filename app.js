@@ -48,7 +48,7 @@ app.post("/sendEmail", async (req, res) => {
   }
 });
 
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 443;
 
 app.listen(port, () => {
   console.log("Server is Runing on " + port);
