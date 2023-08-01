@@ -11,6 +11,7 @@ app.use(cors())
 const transporter = nodemailer.createTransport({
   // Configure your email service provider settings here
   service: "gmail",
+  port:443,
   auth: {
     user: "awaisweb4@gmail.com",
     pass: "foqesciiohulpnfa",
@@ -48,7 +49,7 @@ app.post("/sendEmail", async (req, res) => {
   }
 });
 
-const port = process.env.PORT || 443;
+const port = process.env.PORT || 4000;
 
 app.listen(port, () => {
   console.log("Server is Runing on " + port);
